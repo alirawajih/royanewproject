@@ -1,0 +1,216 @@
+body {
+    background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 15%;
+     background-color: #f1f1f1;
+     position: fixed;
+     height: 100%;
+     overflow: auto;
+ }
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    color: black;
+}
+.navleftlink{
+    color: white;
+}
+.navleftlink:hover{
+
+    color: #5959c4;
+}
+.navbar{
+    border-left: 3px solid #000757;
+    background-color: #8787c0;
+
+}
+.navleft{
+    background-color: black;
+    border-left: 3px solid #000757;
+    width: 200px;
+}
+.logoimg{
+    width: 40px;
+}
+a{
+    text-decoration: none;
+
+}
+.contant{
+    width: 500px;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    margin-top: 7px;
+    padding: 12px;
+}
+.logoutlink{
+    position: absolute; bottom: 11%;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .navleft{
+        width:70px;
+        font-size: 23px;
+    }
+    .textbar{
+        display: none;
+    }
+    #closenav{
+        display: none;
+    }
+    .contant{
+        width: calc(100% - 90px);
+        margin-left: 80px;
+    }
+    .buttondata{
+        padding: 0px;font-size: 10px;
+
+    }
+    .buttondata1{
+        padding: 0px;width: 31px;font-size: 10px;
+    }
+}
+@media only screen and (max-width: 576px) {
+
+    .logoimg{
+        width: 20px;
+    }
+    .textbar{
+        font-size: 12px;
+        display: inline;
+    }
+    .navleft{
+        position:fixed;
+        top:0;
+        width: 100%;
+        height: 100%;
+    }
+    .contant{
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+    .logoutlink{
+         bottom: 0%;
+    }
+    .buttondata{
+        padding: 0px;font-size: 10px;
+    }
+    .buttondata1{
+        padding: 1px;width: 31px;font-size: 10px;
+    }
+
+
+}
+@media only screen and (max-width: 390px) {
+    .table{
+        font-size: 8px;
+    }
+    .deleticons,.editicons,.backicon,.password{
+        font-size: 15px;
+    }
+
+}
+
+
+.huobutton{
+    border-style: none ;color: black;  background-color: transparent
+
+}
+
+#closenav{
+
+    background-color:white;
+    border: 0px;
+    float: right;
+    color: black;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 5px;
+}
+#closenav:hover{
+    color: white;
+    background-color: #000757;
+}
+.deleticons:hover{
+    color: red;
+}
+.editicons:hover{
+    color: green;
+}
+.password:hover{
+    color: #00075A;
+}
+.deleticons,.editicons,.password{
+    color: #b0b2b4;
+}
+.deleticons,.editicons,.backicon,.password{
+    font-size: 20px;
+}
+
+.contantAdmin{
+    float: right;
+    margin-bottom: 5px
+}
+.modlImg{
+    background: rgba(26,32,44,0);border: none
+}
+.img{
+    padding: 0px ; border-style:none;width: 60px;height:60px;border-radius: 0;
+}
+.imgadd{
+    display: none;
+}
+.error{
+    color: red;
+}
+.postCount{
+    size: 5px;
+}
+
