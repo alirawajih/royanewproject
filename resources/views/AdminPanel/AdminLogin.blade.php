@@ -30,9 +30,14 @@
                               method="POST"
                               enctype="multipart/form-data" >
                             {{csrf_field()}}
+                                @if(session()->has('error'))
+                                    <div class="alert alert-danger">
+                                       {{ session()->get('error') }}
+                                    </div>
+                                @endif
 
                             <div class="form-outline mb-4">
-                                <input type="email" name="emailAddress"  placeholder="email" id="form2Example1" class="form-control" />
+                                <input type="email" name="emailAddress"  placeholder="email" id="form2Example1" value="{{old('emailAddress')}}" class="form-control" />
                                 @error('emailAddress')
                                 <div class="form-error error">
                                     {{$message}}
@@ -40,7 +45,7 @@
                                 @enderror
                             </div>
                             <div class="form-outline mb-4">
-                                <input type="password" name="password"  placeholder="password" id="form2Example2" class="form-control" />
+                                <input type="password" name="password"  placeholder="password" id="form2Example2" value="{{old('password')}}" class="form-control" />
                                 @error('password')
                                 <div class="form-error error">
                                     {{$message}}

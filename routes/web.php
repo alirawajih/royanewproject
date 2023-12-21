@@ -18,7 +18,7 @@ use App\Http\Controllers\PostNewsController;
 
 Route::prefix('admin')
     ->middleware('auth:admin_users')->group(function () {
-        Route::get('/home', '\App\Http\Controllers\AccountsController@show')->name('dashboard');
+        Route::get('/', '\App\Http\Controllers\AccountsController@show')->name('dashboard');
 
         //// postnews
         Route::resource('post-news', PostNewsController::class);

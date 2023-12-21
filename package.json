@@ -2,7 +2,11 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "devDependencies": {
         "axios": "^0.27",

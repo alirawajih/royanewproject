@@ -16,10 +16,13 @@ class LoginController extends Controller
             'emailAddress' => ['required', 'email'],
             'password' => ['required'],
         ]);
+        
         if (Auth::guard('admin_users')->attempt($request->only('emailAddress', 'password'))) {
             return redirect()->route('dashboard');
         } else {
-            return view('AdminPanel.AdminLogin');
+            return back()->with('error', 'Email or Password is Invalid
+
+            ');
         }
     }
 
